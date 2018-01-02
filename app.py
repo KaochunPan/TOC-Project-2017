@@ -7,35 +7,112 @@ from flask import Flask, request, send_file
 from fsm import TocMachine
 
 
-API_TOKEN = 'Your Telegram API Token'
-WEBHOOK_URL = 'Your Webhook URL'
+API_TOKEN = "500949998:AAGTNZ_AZHHRCSS0JDKVYbtZv5gCTI_ZFzI"
+WEBHOOK_URL = 'https://b022b5be.ngrok.io/hook'
 
 app = Flask(__name__)
 bot = telegram.Bot(token=API_TOKEN)
 machine = TocMachine(
     states=[
         'user',
-        'state1',
-        'state2'
+        'basic',
+        'crouched',
+        'set_up',
+        'spike',
+        'advanced',
+        'defence',
+        'attack',
+        'record',
+        'year102',
+        'year103',
+        'year104',
+        'year105'
     ],
     transitions=[
         {
             'trigger': 'advance',
             'source': 'user',
-            'dest': 'state1',
-            'conditions': 'is_going_to_state1'
+            'dest': 'basic',
+            'conditions': 'is_going_to_basic'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'basic',
+            'dest': 'crouched',
+            'conditions': 'is_going_to_crouched'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'basic',
+            'dest': 'set_up',
+            'conditions': 'is_going_to_set_up'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'basic',
+            'dest': 'spike',
+            'conditions': 'is_going_to_spike'
         },
         {
             'trigger': 'advance',
             'source': 'user',
-            'dest': 'state2',
-            'conditions': 'is_going_to_state2'
+            'dest': 'advanced',
+            'conditions': 'is_going_to_advanced'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'advanced',
+            'dest': 'defence',
+            'conditions': 'is_going_to_defence'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'advanced',
+            'dest': 'attack',
+            'conditions': 'is_going_to_attack'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'user',
+            'dest': 'record',
+            'conditions': 'is_going_to_record'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'record',
+            'dest': 'year102',
+            'conditions': 'is_going_to_year102'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'record',
+            'dest': 'year103',
+            'conditions': 'is_going_to_year103'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'record',
+            'dest': 'year104',
+            'conditions': 'is_going_to_year104'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'record',
+            'dest': 'year105',
+            'conditions': 'is_going_to_year105'
         },
         {
             'trigger': 'go_back',
             'source': [
-                'state1',
-                'state2'
+                'crouched',
+                'set_up',
+                'spike',
+                'defence',
+                'attack',
+                'year102',
+                'year103',
+                'year104',
+                'year105'
             ],
             'dest': 'user'
         }
