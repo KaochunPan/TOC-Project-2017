@@ -78,7 +78,7 @@ class TocMachine(GraphMachine):
         print('Leaving set_up')
 
     def on_enter_spike(self, update):
-        update.message.reply_text("Now, introduce the spike")
+        update.message.reply_text("Now, introduce the spike攻擊!!")
         self.go_back(update)
 
     def on_exit_spike(self, update):
