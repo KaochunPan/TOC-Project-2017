@@ -52,10 +52,10 @@ The initial state is set to `user`.
 		*advanced(進階排球介紹)
 		*record(歷年成績查詢)
 ### basic
-*option:
-	*crouched(低手介紹)
-	*set_up(高手介紹)
-	*spike(攻擊介紹)
+	*option:
+		*crouched(低手介紹)
+		*set_up(高手介紹)
+		*spike(攻擊介紹)
 
 ### advanced
 	*option:
