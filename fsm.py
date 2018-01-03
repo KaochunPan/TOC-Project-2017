@@ -124,7 +124,7 @@ class TocMachine(GraphMachine):
 
     def on_enter_attack(self, update):
         update.message.reply_text("介紹攻擊戰術")
-        update.message.reply_text("這邊只會介紹快攻戰術，由於長大大致上就是兩邊常以及後排，所以只要了解快攻的變化，基本上就看得懂大部分的攻擊戰術了。")
+        update.message.reply_text("這邊只會介紹快攻戰術，由於長功大致上就是兩邊長以及後排，所以只要了解快攻的變化，基本上就看得懂大部分的攻擊戰術了。")
         update.message.reply_text("A式快攻(A快):\nA快攻在中國又稱為前快球，是攻擊區靠近球網與舉球員的快攻，距離約在舉球員前方一步。當接發球後，快攻手以45度方向步伐直接切入舉球員前方直立起跳，扣球關鍵是要在空中事先起跳等球。在舉球員舉到球前就體跳，球剛離舉球員指尖時，立刻甩臂攻擊。")
         update.message.reply_text("A快影片:\nhttps://youtu.be/VeGuHMO1Zno")
         update.message.reply_text("B式快攻(B快):\nB快攻又可稱作短平快，攻擊區稍離舉球員前方的快攻，距離約2-3米(約在2號位和3號位之間)。當接發球後，快攻手判斷球速及高度起跳，舉球員舉球平行球網，可藉由跑動距離來甩開攔網者。")
