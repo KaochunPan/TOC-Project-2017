@@ -47,12 +47,10 @@ python3 app.py
 ## Usage
 The initial state is set to `user`.
 ### Init
-* option:
-	*basic(基本排球介紹)
-	
-	*advanced(進階排球介紹)
-	
-	*record(歷年成績查詢)
+	* option:
+		*basic(基本排球介紹)
+		*advanced(進階排球介紹)
+		*record(歷年成績查詢)
 ### basic
 *option:
 	*crouched(低手介紹)
