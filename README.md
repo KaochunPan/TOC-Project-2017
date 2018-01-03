@@ -46,16 +46,28 @@ python3 app.py
 
 ## Usage
 The initial state is set to `user`.
+#### Init
+* option:
+	*basic(基本排球介紹)
+	*advanced(進階排球介紹)
+	*record(歷年成績查詢)
+### basic
+*option:
+	*crouched(低手介紹)
+	*set_up(高手介紹)
+	*spike(攻擊介紹)
 
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
-
-* user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
-
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
-
-
+### advanced
+*option:
+	*defence(防守站位介紹)
+	*attack(攻擊戰術介紹)
+	
+### record
+*option:
+	*102(102學年成績查詢)
+	*103(103學年成績查詢)
+	*104(104學年成績查詢)
+	*105(105學年成績查詢)
+	
 ## Author
 [Lee-W](https://github.com/Lee-W)
