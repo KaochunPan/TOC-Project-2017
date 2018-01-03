@@ -58,16 +58,16 @@ The initial state is set to `user`.
 	*spike(攻擊介紹)
 
 ### advanced
-*option:
-	*defence(防守站位介紹)
-	*attack(攻擊戰術介紹)
+	*option:
+		*defence(防守站位介紹)
+		*attack(攻擊戰術介紹)
 	
 ### record
-*option:
-	*102(102學年成績查詢)
-	*103(103學年成績查詢)
-	*104(104學年成績查詢)
-	*105(105學年成績查詢)
+	*option:
+		*102(102學年成績查詢)
+		*103(103學年成績查詢)
+		*104(104學年成績查詢)
+		*105(105學年成績查詢)
 	
 ## Author
 [Lee-W](https://github.com/Lee-W)
